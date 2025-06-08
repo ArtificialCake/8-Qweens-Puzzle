@@ -1,0 +1,41 @@
+
+#gameboard div {                            /*// for image tags or text to not be highlighted*/
+    user-select: none;                      /*// source: https://youtu.be/ej8SatOj3V4?si=oUI5sU4glZS1rNoO */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+body {
+    
+    background-color: #302e2b;
+    color: rgb(223, 17, 17);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#gameboard {
+    width: 540px;
+    height:540px;
+    background-image: url("https://media0.giphy.com/media/Ju7l5y9osyymQ/200w.gif?cid=6c09b952noltitn0d239zrq57ln2c33uvwcngstnvkjs6sxm&ep=v1_gifs_search&rid=200w.gif&ct=g");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;                  /* width and height
+    /**/
+    border: 50px solid rgb(160, 84, 49);       /* Highlight boarder*/
+
+    margin: 0 auto;                 /* to center the board*/
+    display: flex;                  /* tile divs from left to right and...*/
+    flex-wrap: wrap;                /* ...top to bottom without falling out of the board*/
+    border-radius: 2%;
+}
+
+#gameboard div {                    /*board = 540x540, divide into 8x8 tiles --> (540/8) 67.5x67.5 per div */
+    width: 67.5px;
+    height: 67.5px;
+    /*opacity: 20%;                 /* document.getElementById("myDIV").style.opacity = "0.5"; */
+
+    
+}
