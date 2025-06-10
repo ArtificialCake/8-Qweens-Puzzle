@@ -69,28 +69,28 @@ function setGame() {                   // set up the grid for the game board in 
                         show_Moves();
                     }
                     y = j; // resets value
-                    while ((x !== 8) || (y !== 8)) {                // to RightBottom  // if x|y = 7, stops at 7, without giving it color
+                    while ((x !== 8) && (y !== 8)) {                // to RightBottom  // if x|y = 7, stops at 7, without giving it color
                         show_Moves();
                         x++;
                         y++;
                     }
                     x = i; // reset
                     y = j; // reset
-                    while ((x !== -1) || (y !== -1)) {              // to LeftTop // if x|y = 0, stops at 0, without giving it color
+                    while ((x !== -1) && (y !== -1)) {              // to LeftTop // if x|y = 0, stops at 0, without giving it color
                         show_Moves();
                         x--;
                         y--;
                     }
                     x = i;
                     y = j;
-                    while ((x !== -1) || (y !== 8)) {              // to RightTop
+                    while ((x !== -1) && (y !== 8)) {              // to RightTop
                         show_Moves();
                         x--;
                         y++;
                     }
                     x = i;
                     y = j;
-                    while ((x !== 8) || (y !== -1)) {              // to LeftBottom
+                    while ((x !== 8) && (y !== -1)) {              // to LeftBottom
                         show_Moves();
                         x++;
                         y--;
