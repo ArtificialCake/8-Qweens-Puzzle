@@ -1,2 +1,2 @@
-# 8-Qweens-Puzzle in Javascript
+# 8-Queens-Puzzle in Javascript
 The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard, whithout threatening each other.
